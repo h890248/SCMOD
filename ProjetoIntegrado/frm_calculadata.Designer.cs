@@ -426,6 +426,7 @@
             this.Controls.Add(this.dtp_cal_entre_datas_inicial);
             this.Controls.Add(this.dtp_cal_nascimento);
             this.Name = "frm_calculadata";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_calculadata";
             this.gb_somar.ResumeLayout(false);
             this.gb_somar.PerformLayout();

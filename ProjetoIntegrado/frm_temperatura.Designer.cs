@@ -122,7 +122,7 @@
             this.label1.Text = "Escolha a escala e temperatura";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Form2
+            // frm_temperatura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -137,7 +137,8 @@
             this.Controls.Add(this.radioKelvin);
             this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form2";
+            this.Name = "frm_temperatura";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Temperatura";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -193,6 +193,7 @@
             this.MainMenuStrip = this.menu_s_index;
             this.MaximizeBox = false;
             this.Name = "frm_inicial";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SCMOD";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menu_s_index.ResumeLayout(false);

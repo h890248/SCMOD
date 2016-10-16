@@ -93,7 +93,11 @@ namespace ProjetoIntegrado
             }
 
             //8.	qualquer data válida (uma data correta, passada, futura ou hoje)
-
+            DateTime resultado = DateTime.MinValue; //Retorna se a data é válida
+            if (DateTime.TryParse(senha, out resultado))
+            {
+                nota = nota - 3;
+            }
             return nota;
         }
 
