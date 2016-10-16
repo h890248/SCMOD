@@ -86,31 +86,48 @@ namespace ProjetoIntegrado
         {
             Boolean resultado;
             int l_grau;
+            DialogResult resultado_dialogo;
             try
             {
                 string senha;
                 senha = txt_pass.Text;
-                resultado = valida_senha.restritivo(senha);
-                if (resultado == true)
+                if (txt_user.TextLength <= 0){
+                    MessageBox.Show("Campo de Usuario nao pode estar vazio", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    txt_user.Focus();
+                }
+                else
                 {
-                    l_grau = valida_senha.qualitativo(txt_pass.Text, txt_user.Text, TEMP_COD_USR);
+                    
+                    resultado = valida_senha.restritivo(senha);
+                    if ((resultado == true))
+                    {
+                        l_grau = valida_senha.qualitativo(txt_pass.Text, txt_user.Text, TEMP_COD_USR);
                         try
                         {
-                            MessageBox.Show("Senha dentro dos padroes e Aceita com o grau de segurança : "+ valida_senha.define_grau(l_grau));
-                            txt_user.Focus();
+                            resultado_dialogo = MessageBox.Show("Senha dentro dos padroes e Aceita com o grau de segurança : " + valida_senha.define_grau(l_grau) + " . \n Deseja Tentar criar uma senha mais forte?", "Senha Aceita", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+                            if (resultado_dialogo == DialogResult.Yes)
+                            {
+                                txt_user.Focus();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Senha Alterada com sucesso !!!", "Confirmado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                            
                         }
                         catch (System.ArgumentException ex)
                         {
-                            MessageBox.Show(ex.Message);
+                            MessageBox.Show(ex.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                             txt_pass.Focus();
                         }
 
+                    }
                 }
-
             }
             catch (System.ArgumentException ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txt_pass.Focus();
             }
         }
     }
