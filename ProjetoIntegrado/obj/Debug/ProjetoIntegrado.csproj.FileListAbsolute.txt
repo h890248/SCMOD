@@ -1,0 +1,149 @@
+c:\users\elen\documents\visual studio 2015\Projects\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe.config
+c:\users\elen\documents\visual studio 2015\Projects\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe
+c:\users\elen\documents\visual studio 2015\Projects\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.pdb
+c:\users\elen\documents\visual studio 2015\Projects\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csprojResolveAssemblyReference.cache
+c:\users\elen\documents\visual studio 2015\Projects\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form1.resources
+c:\users\elen\documents\visual studio 2015\Projects\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Properties.Resources.resources
+c:\users\elen\documents\visual studio 2015\Projects\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csproj.GenerateResource.Cache
+c:\users\elen\documents\visual studio 2015\Projects\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.exe
+c:\users\elen\documents\visual studio 2015\Projects\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.pdb
+c:\users\elen\documents\visual studio 2015\Projects\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form2.resources
+R:\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe.config
+R:\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.exe
+R:\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.pdb
+R:\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe
+R:\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.pdb
+R:\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csprojResolveAssemblyReference.cache
+R:\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form1.resources
+R:\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form2.resources
+R:\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Properties.Resources.resources
+R:\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csproj.GenerateResource.Cache
+D:\Documentos\projeto integrado A\B\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe.config
+D:\Documentos\projeto integrado A\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.exe
+D:\Documentos\projeto integrado A\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.pdb
+D:\Documentos\projeto integrado A\B\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe
+D:\Documentos\projeto integrado A\B\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.pdb
+D:\Documentos\projeto integrado A\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csprojResolveAssemblyReference.cache
+D:\Documentos\projeto integrado A\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form1.resources
+D:\Documentos\projeto integrado A\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form2.resources
+D:\Documentos\projeto integrado A\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Properties.Resources.resources
+D:\Documentos\projeto integrado A\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csproj.GenerateResource.Cache
+C:\Users\Henrique\Desktop\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe.config
+C:\Users\Henrique\Desktop\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.exe
+C:\Users\Henrique\Desktop\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.pdb
+C:\Users\Henrique\Desktop\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe
+C:\Users\Henrique\Desktop\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.pdb
+C:\Users\Henrique\Desktop\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csprojResolveAssemblyReference.cache
+C:\Users\Henrique\Desktop\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form1.resources
+C:\Users\Henrique\Desktop\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form2.resources
+C:\Users\Henrique\Desktop\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Properties.Resources.resources
+C:\Users\Henrique\Desktop\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csproj.GenerateResource.Cache
+C:\Users\Henrique\Desktop\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_about.resources
+R:\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_about.resources
+R:\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe.config
+R:\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.exe
+R:\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.pdb
+R:\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe
+R:\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.pdb
+R:\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csprojResolveAssemblyReference.cache
+R:\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form1.resources
+R:\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form2.resources
+R:\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_about.resources
+R:\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Properties.Resources.resources
+R:\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csproj.GenerateResource.Cache
+C:\Users\Henrique\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe.config
+C:\Users\Henrique\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.exe
+C:\Users\Henrique\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.pdb
+C:\Users\Henrique\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe
+C:\Users\Henrique\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.pdb
+C:\Users\Henrique\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csprojResolveAssemblyReference.cache
+C:\Users\Henrique\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form1.resources
+C:\Users\Henrique\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form2.resources
+C:\Users\Henrique\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_about.resources
+C:\Users\Henrique\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Properties.Resources.resources
+C:\Users\Henrique\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csproj.GenerateResource.Cache
+C:\Users\Henrique\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_calculadata.resources
+C:\Users\16500316\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe.config
+C:\Users\16500316\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.exe
+C:\Users\16500316\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.pdb
+C:\Users\16500316\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe
+C:\Users\16500316\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.pdb
+C:\Users\16500316\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csprojResolveAssemblyReference.cache
+C:\Users\16500316\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form1.resources
+C:\Users\16500316\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form2.resources
+C:\Users\16500316\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_about.resources
+C:\Users\16500316\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_calculadata.resources
+C:\Users\16500316\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Properties.Resources.resources
+C:\Users\16500316\Desktop\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csproj.GenerateResource.Cache
+C:\Users\Henrique\Desktop\ws\proj_integrado-2.0.0-SNAPSHOT-3\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe.config
+C:\Users\Henrique\Desktop\ws\proj_integrado-2.0.0-SNAPSHOT-3\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.exe
+C:\Users\Henrique\Desktop\ws\proj_integrado-2.0.0-SNAPSHOT-3\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.pdb
+C:\Users\Henrique\Desktop\ws\proj_integrado-2.0.0-SNAPSHOT-3\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe
+C:\Users\Henrique\Desktop\ws\proj_integrado-2.0.0-SNAPSHOT-3\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.pdb
+C:\Users\Henrique\Desktop\ws\proj_integrado-2.0.0-SNAPSHOT-3\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csprojResolveAssemblyReference.cache
+C:\Users\Henrique\Desktop\ws\proj_integrado-2.0.0-SNAPSHOT-3\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form1.resources
+C:\Users\Henrique\Desktop\ws\proj_integrado-2.0.0-SNAPSHOT-3\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form2.resources
+C:\Users\Henrique\Desktop\ws\proj_integrado-2.0.0-SNAPSHOT-3\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_about.resources
+C:\Users\Henrique\Desktop\ws\proj_integrado-2.0.0-SNAPSHOT-3\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_calculadata.resources
+C:\Users\Henrique\Desktop\ws\proj_integrado-2.0.0-SNAPSHOT-3\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Properties.Resources.resources
+C:\Users\Henrique\Desktop\ws\proj_integrado-2.0.0-SNAPSHOT-3\proj_integrado-2.0.0-SNAPSHOT\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csproj.GenerateResource.Cache
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.0\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe.config
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.0\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.exe
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.0\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.pdb
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.0\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.0\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.pdb
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.0\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csprojResolveAssemblyReference.cache
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.0\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form1.resources
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.0\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form2.resources
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.0\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_about.resources
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.0\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_calculadata.resources
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.0\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Properties.Resources.resources
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.0\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csproj.GenerateResource.Cache
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.1\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe.config
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.1\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.exe
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.1\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.pdb
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.1\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.1\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.pdb
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.1\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csprojResolveAssemblyReference.cache
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.1\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Form2.resources
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.1\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_about.resources
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.1\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_calculadata.resources
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.1\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Properties.Resources.resources
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.1\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csproj.GenerateResource.Cache
+C:\Users\Henrique\Desktop\ws\SNAPSHOT-MERGE-2.0.1\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_inicial.resources
+C:\Users\16500316.LAB-INF\Desktop\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe.config
+C:\Users\16500316.LAB-INF\Desktop\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.exe
+C:\Users\16500316.LAB-INF\Desktop\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.pdb
+C:\Users\16500316.LAB-INF\Desktop\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe
+C:\Users\16500316.LAB-INF\Desktop\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.pdb
+C:\Users\16500316.LAB-INF\Desktop\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csprojResolveAssemblyReference.cache
+C:\Users\16500316.LAB-INF\Desktop\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_inicial.resources
+C:\Users\16500316.LAB-INF\Desktop\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_about.resources
+C:\Users\16500316.LAB-INF\Desktop\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_calculadata.resources
+C:\Users\16500316.LAB-INF\Desktop\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Properties.Resources.resources
+C:\Users\16500316.LAB-INF\Desktop\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csproj.GenerateResource.Cache
+C:\Users\16500316.LAB-INF\Desktop\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_temperatura.resources
+D:\Documentos\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe.config
+D:\Documentos\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.exe
+D:\Documentos\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.pdb
+D:\Documentos\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csprojResolveAssemblyReference.cache
+D:\Documentos\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_inicial.resources
+D:\Documentos\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_temperatura.resources
+D:\Documentos\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_about.resources
+D:\Documentos\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_calculadata.resources
+D:\Documentos\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Properties.Resources.resources
+D:\Documentos\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csproj.GenerateResource.Cache
+D:\Documentos\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe
+D:\Documentos\projeto integrado\B\ProjetoIntegrado\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.pdb
+D:\GIT\SCMOD\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe.config
+D:\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.exe
+D:\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.pdb
+D:\GIT\SCMOD\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe
+D:\GIT\SCMOD\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.pdb
+D:\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csprojResolveAssemblyReference.cache
+D:\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_inicial.resources
+D:\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_temperatura.resources
+D:\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_about.resources
+D:\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_calculadata.resources
+D:\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Properties.Resources.resources
+D:\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csproj.GenerateResource.Cache
