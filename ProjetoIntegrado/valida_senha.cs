@@ -47,7 +47,6 @@ namespace ProjetoIntegrado
             // Boolean verifica = false;
 
             //1.	Números sequenciais crescentes com 4 ou + algarismos.   Ex.: 12345
-
             //2.	Números sequenciais decrescentes com 4 ou+ algarismos.
 
             //3.	Apenas 3 letras  OK

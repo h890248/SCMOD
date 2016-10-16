@@ -158,3 +158,4 @@ C:\Users\Henrique\Desktop\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.
 C:\Users\Henrique\Desktop\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csproj.GenerateResource.Cache
 C:\Users\Henrique\Desktop\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.exe
 C:\Users\Henrique\Desktop\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.pdb
+C:\Users\Henrique\Desktop\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csprojResolveAssemblyReference.cache
