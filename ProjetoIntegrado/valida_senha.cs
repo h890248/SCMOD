@@ -44,7 +44,7 @@ namespace ProjetoIntegrado
         {
             int nota = 10;
             int i = 0;
-            Boolean verifica = false;
+            // Boolean verifica = false;
 
             //1.	Números sequenciais crescentes com 4 ou + algarismos.   Ex.: 12345
 

@@ -39,7 +39,7 @@
             this.txt_pass = new System.Windows.Forms.TextBox();
             this.btn_login = new System.Windows.Forms.Button();
             this.pic_logo = new System.Windows.Forms.PictureBox();
-            this.ll_alterar_senha = new System.Windows.Forms.LinkLabel();
+            this.ll_avaliar_senha = new System.Windows.Forms.LinkLabel();
             this.menu_s_index.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).BeginInit();
             this.SuspendLayout();
@@ -161,16 +161,16 @@
             this.pic_logo.TabIndex = 4;
             this.pic_logo.TabStop = false;
             // 
-            // ll_alterar_senha
+            // ll_avaliar_senha
             // 
-            this.ll_alterar_senha.AutoSize = true;
-            this.ll_alterar_senha.Location = new System.Drawing.Point(160, 304);
-            this.ll_alterar_senha.Name = "ll_alterar_senha";
-            this.ll_alterar_senha.Size = new System.Drawing.Size(82, 15);
-            this.ll_alterar_senha.TabIndex = 5;
-            this.ll_alterar_senha.TabStop = true;
-            this.ll_alterar_senha.Text = "Avaliar Senha";
-            this.ll_alterar_senha.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ll_alterar_senha_LinkClicked);
+            this.ll_avaliar_senha.AutoSize = true;
+            this.ll_avaliar_senha.Location = new System.Drawing.Point(160, 304);
+            this.ll_avaliar_senha.Name = "ll_avaliar_senha";
+            this.ll_avaliar_senha.Size = new System.Drawing.Size(82, 15);
+            this.ll_avaliar_senha.TabIndex = 5;
+            this.ll_avaliar_senha.TabStop = true;
+            this.ll_avaliar_senha.Text = "Avaliar Senha";
+            this.ll_avaliar_senha.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ll_avaliar_senha_LinkClicked);
             // 
             // frm_inicial
             // 
@@ -179,7 +179,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(521, 408);
-            this.Controls.Add(this.ll_alterar_senha);
+            this.Controls.Add(this.ll_avaliar_senha);
             this.Controls.Add(this.pic_logo);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.txt_pass);
@@ -216,7 +216,7 @@
         private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.PictureBox pic_logo;
         private System.Windows.Forms.ToolStripMenuItem MNcalc_data;
-        private System.Windows.Forms.LinkLabel ll_alterar_senha;
+        private System.Windows.Forms.LinkLabel ll_avaliar_senha;
     }
 }
 

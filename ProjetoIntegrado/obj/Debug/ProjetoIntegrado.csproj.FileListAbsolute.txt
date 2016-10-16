@@ -147,3 +147,15 @@ D:\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_about.resources
 D:\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_calculadata.resources
 D:\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Properties.Resources.resources
 D:\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csproj.GenerateResource.Cache
+C:\Users\Henrique\Desktop\GIT\SCMOD\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe.config
+C:\Users\Henrique\Desktop\GIT\SCMOD\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.exe
+C:\Users\Henrique\Desktop\GIT\SCMOD\ProjetoIntegrado\bin\Debug\ProjetoIntegrado.pdb
+C:\Users\Henrique\Desktop\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csprojResolveAssemblyReference.cache
+C:\Users\Henrique\Desktop\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_inicial.resources
+C:\Users\Henrique\Desktop\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_temperatura.resources
+C:\Users\Henrique\Desktop\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_about.resources
+C:\Users\Henrique\Desktop\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.frm_calculadata.resources
+C:\Users\Henrique\Desktop\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.Properties.Resources.resources
+C:\Users\Henrique\Desktop\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.csproj.GenerateResource.Cache
+C:\Users\Henrique\Desktop\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.exe
+C:\Users\Henrique\Desktop\GIT\SCMOD\ProjetoIntegrado\obj\Debug\ProjetoIntegrado.pdb

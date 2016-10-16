@@ -15,11 +15,21 @@ namespace ProjetoIntegrado
         Form Form2 = new ProjetoIntegrado.frm_temperatura();
         Form frm_sobre = new ProjetoIntegrado.frm_about();
         Form frm_calculadata = new ProjetoIntegrado.frm_calculadata();
-        String TEMP_USUARIO = "";
-        String TEMP_SENHA = "";
+        
+        /*
+         * Variaveis TEMPORARIAS para a implementação parcial de F6
+         */
+        double TEMP_COD_USR = 41982059858;
+        
+        /*
+         * FIM de - Variaveis TEMPORARIAS para a implementação parcial de F6
+         */
+        
         public frm_inicial()
         {
             InitializeComponent();
+            txt_user.Select();
+            txt_pass.PasswordChar = '*';
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -70,42 +80,38 @@ namespace ProjetoIntegrado
 
         private void btn_login_Click(object sender, EventArgs e)
         {
+        }
+
+        private void ll_avaliar_senha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
             Boolean resultado;
+            int l_grau;
             try
-            { 
+            {
                 string senha;
                 senha = txt_pass.Text;
                 resultado = valida_senha.restritivo(senha);
                 if (resultado == true)
-                    MessageBox.Show("sucesso");
+                {
+                    l_grau = valida_senha.qualitativo(txt_pass.Text, txt_user.Text, TEMP_COD_USR);
+                        try
+                        {
+                            MessageBox.Show("Senha dentro dos padroes e Aceita com o grau de segurança : "+ valida_senha.define_grau(l_grau));
+                            txt_user.Focus();
+                        }
+                        catch (System.ArgumentException ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                            txt_pass.Focus();
+                        }
+
+                }
 
             }
             catch (System.ArgumentException ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
-
-        private void ll_alterar_senha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        /*
-         * RF 6.4
-         * 
-            Pontuação negativa no caso de ocorrência dos critérios acima:
-            Critérios  3,4        ->  -1 cada
-            Critérios  1,2,5,6  ->  -2 cada
-            Critérios  7,8        ->  -3 cada
-
-            RF 6.4- Partindo de 10 pontos e usando o critério de pontuação negativa acima, apurar a “nota final da senha”, que deverá ser mostrada ao usuário usando a seguinte graduação:
-            Notas 9 ou 10 ->  Muito Forte
-            Notas 7 ou 8 ->   Forte
-            Notas 5 ou 6 ->   Razoável
-            Notas 3 ou 4 ->   Fraca
-            Abaixo de 3  ->   Muito Fraca
-       */
     }
 }
