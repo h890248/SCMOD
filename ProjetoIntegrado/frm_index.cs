@@ -15,6 +15,8 @@ namespace ProjetoIntegrado
         Form Form2 = new ProjetoIntegrado.frm_temperatura();
         Form frm_sobre = new ProjetoIntegrado.frm_about();
         Form frm_calculadata = new ProjetoIntegrado.frm_calculadata();
+        String TEMP_USUARIO = "";
+        String TEMP_SENHA = "";
         public frm_inicial()
         {
             InitializeComponent();
@@ -82,6 +84,11 @@ namespace ProjetoIntegrado
             {
                 MessageBox.Show(ex.Message);
             }
+
+        }
+
+        private void ll_alterar_senha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
 
         }
 

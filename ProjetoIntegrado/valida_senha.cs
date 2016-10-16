@@ -40,19 +40,91 @@ namespace ProjetoIntegrado
         }
 
         // REF 6.3
-        public static int qualitativo (string senha)
+        public static int qualitativo(string senha, string nome_usuario, double codigo_usuario)
         {
-            /*
-                1.	Números sequenciais crescentes com 4 ou + algarismos.   Ex.: 12345
-                2.	Números sequenciais decrescentes com 4 ou+ algarismos.
-                3.	Apenas 3 letras
-                4.	Apenas 2 algarismos numéricos
-                5.	Os oito (8) primeiros números do código do usuário contido na senha (o código do usuário é o CPF, com 11 algarismos)
-                6.	nome do usuário (primeiro nome) contido na senha (30 caracteres)
-                7.	iniciais do nome do usuário    Ex.:  Ana Maria Castro  ->  AMC
-                8.	qualquer data válida (uma data correta, passada, futura ou hoje)
-            */
-            return 0;
+            int nota = 10;
+            int i = 0;
+            Boolean verifica = false;
+
+            //1.	Números sequenciais crescentes com 4 ou + algarismos.   Ex.: 12345
+
+            //2.	Números sequenciais decrescentes com 4 ou+ algarismos.
+
+            //3.	Apenas 3 letras  OK
+            if (senha.Where(c => char.IsLetter(c)).Count() == 3)
+            {
+                nota--;
+            }
+
+            //4.	Apenas 2 algarismos numéricos OK
+            if (senha.Where(c => char.IsNumber(c)).Count() == 2)
+            {
+                nota--;
+            }
+
+            //5.	Os oito (8) primeiros números do código do usuário contido na senha (o código do usuário é o CPF, com 11 algarismos) OK
+            string codigo = codigo_usuario.ToString();
+            if (senha.Contains(codigo))
+            {
+                nota = nota - 2;
+            }
+
+            //6.	nome do usuário (primeiro nome) contido na senha (30 caracteres)  OK
+            String[] nomes = nome_usuario.Split(' ');
+            string primeiro_nome = nomes[0];
+            if (senha.Contains(primeiro_nome))
+            {
+                nota = nota - 2;
+            }
+
+            //7.	iniciais do nome do usuário    Ex.:  Ana Maria Castro  ->  AMC  OK
+            int count = 0;
+            String[] substrings = nome_usuario.Split(' ');
+            string iniciais = primeiro_nome[0].ToString();
+            for (count = 1; count < substrings.Length; i++)
+            {
+                string aux = substrings[count];
+                string.Concat(iniciais, aux[0]);
+            }
+
+            if (senha.Contains(iniciais))
+            {
+                nota = nota - 3;
+            }
+
+            //8.	qualquer data válida (uma data correta, passada, futura ou hoje)
+
+            return nota;
+        }
+
+        // REF 6.4 e REF 6.6
+        public static string define_grau (int nota)
+        {
+            string grau = " ";
+            switch (nota)
+            {
+                case 10:
+                case 9:
+                    grau = "Muito Forte";
+                    break;
+                case 8:
+                case 7:
+                    grau = "Forte";
+                    break;
+                case 6:
+                case 5:
+                    grau = "Razoável";
+                    break;
+                case 4:
+                case 3:
+                    grau = "Fraca";
+                    break;
+                case 2:
+                case 1:
+                    grau = "Muito Fraca";
+                    throw new System.ArgumentException(" Senha muito fraca! Escolha uma nova senha. ");
+            }
+            return grau;
         }
     }
 }

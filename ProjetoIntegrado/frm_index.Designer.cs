@@ -39,6 +39,7 @@
             this.txt_pass = new System.Windows.Forms.TextBox();
             this.btn_login = new System.Windows.Forms.Button();
             this.pic_logo = new System.Windows.Forms.PictureBox();
+            this.ll_alterar_senha = new System.Windows.Forms.LinkLabel();
             this.menu_s_index.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).BeginInit();
             this.SuspendLayout();
@@ -125,7 +126,7 @@
             // 
             this.txt_user.Location = new System.Drawing.Point(163, 240);
             this.txt_user.Name = "txt_user";
-            this.txt_user.Size = new System.Drawing.Size(186, 21);
+            this.txt_user.Size = new System.Drawing.Size(220, 21);
             this.txt_user.TabIndex = 2;
             this.txt_user.TextChanged += new System.EventHandler(this.txtusuario_TextChanged);
             // 
@@ -133,7 +134,7 @@
             // 
             this.txt_pass.Location = new System.Drawing.Point(163, 270);
             this.txt_pass.Name = "txt_pass";
-            this.txt_pass.Size = new System.Drawing.Size(186, 21);
+            this.txt_pass.Size = new System.Drawing.Size(220, 21);
             this.txt_pass.TabIndex = 2;
             // 
             // btn_login
@@ -142,7 +143,7 @@
             this.btn_login.Cursor = System.Windows.Forms.Cursors.Default;
             this.btn_login.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_login.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_login.Location = new System.Drawing.Point(253, 312);
+            this.btn_login.Location = new System.Drawing.Point(287, 297);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(96, 30);
             this.btn_login.TabIndex = 3;
@@ -160,6 +161,17 @@
             this.pic_logo.TabIndex = 4;
             this.pic_logo.TabStop = false;
             // 
+            // ll_alterar_senha
+            // 
+            this.ll_alterar_senha.AutoSize = true;
+            this.ll_alterar_senha.Location = new System.Drawing.Point(160, 304);
+            this.ll_alterar_senha.Name = "ll_alterar_senha";
+            this.ll_alterar_senha.Size = new System.Drawing.Size(82, 15);
+            this.ll_alterar_senha.TabIndex = 5;
+            this.ll_alterar_senha.TabStop = true;
+            this.ll_alterar_senha.Text = "Avaliar Senha";
+            this.ll_alterar_senha.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ll_alterar_senha_LinkClicked);
+            // 
             // frm_inicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -167,6 +179,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(521, 408);
+            this.Controls.Add(this.ll_alterar_senha);
             this.Controls.Add(this.pic_logo);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.txt_pass);
@@ -203,6 +216,7 @@
         private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.PictureBox pic_logo;
         private System.Windows.Forms.ToolStripMenuItem MNcalc_data;
+        private System.Windows.Forms.LinkLabel ll_alterar_senha;
     }
 }
 
