@@ -48,6 +48,31 @@ namespace ProjetoIntegrado
 
             //1.	Números sequenciais crescentes com 4 ou + algarismos.   Ex.: 12345
             //2.	Números sequenciais decrescentes com 4 ou+ algarismos.
+            int j,cr=1,d=1,n=0;
+      
+            for(i=0;i<senha.Length;i++)
+            {
+                if (char.IsDigit(senha[i]))
+                {
+                    n++;
+                    if(i > 0)
+                    {
+                        j=i-1;
+                        if (char.IsDigit(senha[j]))
+                            if(senha[i]-senha[j]==1)
+                                cr++;
+                            else if(senha[i]-senha[j]==-1)
+                                d++;
+                    }
+                }
+
+            }
+
+            if (n >= 4)
+                if (cr == n || d == n)
+                    nota = nota - 2;
+        
+                    i = 0;
 
             //3.	Apenas 3 letras  OK
             if (senha.Where(c => char.IsLetter(c)).Count() == 3)
@@ -69,6 +94,7 @@ namespace ProjetoIntegrado
             }
 
             //6.	nome do usuário (primeiro nome) contido na senha (30 caracteres)  OK
+            nome_usuario = string.Concat(nome_usuario, " ");
             String[] nomes = nome_usuario.Split(' ');
             string primeiro_nome = nomes[0];
             if (senha.Contains(primeiro_nome))
@@ -80,10 +106,12 @@ namespace ProjetoIntegrado
             int count = 0;
             String[] substrings = nome_usuario.Split(' ');
             string iniciais = primeiro_nome[0].ToString();
-            for (count = 1; count < substrings.Length; i++)
+            string aux = " ";
+            for (count = 1; count < substrings.Length-1; count++) 
             {
-                string aux = substrings[count];
-                string.Concat(iniciais, aux[0]);
+                aux = substrings[count];
+                iniciais = string.Concat(iniciais , aux[0]);
+                Console.WriteLine(iniciais);
             }
 
             if (senha.Contains(iniciais))
