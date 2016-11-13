@@ -40,8 +40,12 @@
             this.btn_login = new System.Windows.Forms.Button();
             this.pic_logo = new System.Windows.Forms.PictureBox();
             this.ll_avaliar_senha = new System.Windows.Forms.LinkLabel();
+            this.gb_login = new System.Windows.Forms.GroupBox();
+            this.lb_logado = new System.Windows.Forms.Label();
+            this.lb_logado_perfil = new System.Windows.Forms.Label();
             this.menu_s_index.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).BeginInit();
+            this.gb_login.SuspendLayout();
             this.SuspendLayout();
             // 
             // menu_s_index
@@ -103,7 +107,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(93, 243);
+            this.label1.Location = new System.Drawing.Point(24, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 18);
             this.label1.TabIndex = 1;
@@ -116,7 +120,7 @@
             this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(103, 271);
+            this.label2.Location = new System.Drawing.Point(34, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 18);
             this.label2.TabIndex = 1;
@@ -124,7 +128,7 @@
             // 
             // txt_user
             // 
-            this.txt_user.Location = new System.Drawing.Point(163, 240);
+            this.txt_user.Location = new System.Drawing.Point(94, 38);
             this.txt_user.Name = "txt_user";
             this.txt_user.Size = new System.Drawing.Size(220, 21);
             this.txt_user.TabIndex = 2;
@@ -132,7 +136,7 @@
             // 
             // txt_pass
             // 
-            this.txt_pass.Location = new System.Drawing.Point(163, 270);
+            this.txt_pass.Location = new System.Drawing.Point(94, 65);
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.Size = new System.Drawing.Size(220, 21);
             this.txt_pass.TabIndex = 2;
@@ -143,7 +147,7 @@
             this.btn_login.Cursor = System.Windows.Forms.Cursors.Default;
             this.btn_login.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_login.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_login.Location = new System.Drawing.Point(287, 297);
+            this.btn_login.Location = new System.Drawing.Point(218, 92);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(96, 30);
             this.btn_login.TabIndex = 3;
@@ -164,13 +168,45 @@
             // ll_avaliar_senha
             // 
             this.ll_avaliar_senha.AutoSize = true;
-            this.ll_avaliar_senha.Location = new System.Drawing.Point(160, 304);
+            this.ll_avaliar_senha.Location = new System.Drawing.Point(91, 89);
             this.ll_avaliar_senha.Name = "ll_avaliar_senha";
             this.ll_avaliar_senha.Size = new System.Drawing.Size(82, 15);
             this.ll_avaliar_senha.TabIndex = 5;
             this.ll_avaliar_senha.TabStop = true;
             this.ll_avaliar_senha.Text = "Avaliar Senha";
             this.ll_avaliar_senha.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ll_avaliar_senha_LinkClicked);
+            // 
+            // gb_login
+            // 
+            this.gb_login.Controls.Add(this.ll_avaliar_senha);
+            this.gb_login.Controls.Add(this.txt_user);
+            this.gb_login.Controls.Add(this.label1);
+            this.gb_login.Controls.Add(this.btn_login);
+            this.gb_login.Controls.Add(this.label2);
+            this.gb_login.Controls.Add(this.txt_pass);
+            this.gb_login.Location = new System.Drawing.Point(76, 199);
+            this.gb_login.Name = "gb_login";
+            this.gb_login.Size = new System.Drawing.Size(334, 168);
+            this.gb_login.TabIndex = 6;
+            this.gb_login.TabStop = false;
+            // 
+            // lb_logado
+            // 
+            this.lb_logado.AutoSize = true;
+            this.lb_logado.Location = new System.Drawing.Point(108, 226);
+            this.lb_logado.Name = "lb_logado";
+            this.lb_logado.Size = new System.Drawing.Size(41, 15);
+            this.lb_logado.TabIndex = 8;
+            this.lb_logado.Text = "label4";
+            // 
+            // lb_logado_perfil
+            // 
+            this.lb_logado_perfil.AutoSize = true;
+            this.lb_logado_perfil.Location = new System.Drawing.Point(108, 263);
+            this.lb_logado_perfil.Name = "lb_logado_perfil";
+            this.lb_logado_perfil.Size = new System.Drawing.Size(41, 15);
+            this.lb_logado_perfil.TabIndex = 9;
+            this.lb_logado_perfil.Text = "label4";
             // 
             // frm_inicial
             // 
@@ -179,14 +215,11 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(521, 408);
-            this.Controls.Add(this.ll_avaliar_senha);
+            this.Controls.Add(this.lb_logado_perfil);
+            this.Controls.Add(this.lb_logado);
             this.Controls.Add(this.pic_logo);
-            this.Controls.Add(this.btn_login);
-            this.Controls.Add(this.txt_pass);
-            this.Controls.Add(this.txt_user);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.menu_s_index);
+            this.Controls.Add(this.gb_login);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -199,6 +232,8 @@
             this.menu_s_index.ResumeLayout(false);
             this.menu_s_index.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).EndInit();
+            this.gb_login.ResumeLayout(false);
+            this.gb_login.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,6 +253,9 @@
         private System.Windows.Forms.PictureBox pic_logo;
         private System.Windows.Forms.ToolStripMenuItem MNcalc_data;
         private System.Windows.Forms.LinkLabel ll_avaliar_senha;
+        private System.Windows.Forms.GroupBox gb_login;
+        private System.Windows.Forms.Label lb_logado;
+        private System.Windows.Forms.Label lb_logado_perfil;
     }
 }
 

@@ -15,21 +15,19 @@ namespace ProjetoIntegrado
         Form Form2 = new ProjetoIntegrado.frm_temperatura();
         Form frm_sobre = new ProjetoIntegrado.frm_about();
         Form frm_calculadata = new ProjetoIntegrado.frm_calculadata();
-        
-        /*
-         * Variaveis TEMPORARIAS para a implementação parcial de F6
-         */
-        double TEMP_COD_USR = 41982059858;
-        
-        /*
-         * FIM de - Variaveis TEMPORARIAS para a implementação parcial de F6
-         */
+        double TEMP_COD_USR;
+        string perfil_tipo;
         
         public frm_inicial()
         {
             InitializeComponent();
+            MNescala.Enabled = true;
+            MNcalc_data.Enabled = false;
             txt_user.Select();
             txt_pass.PasswordChar = '*';
+            lb_logado.Visible = false;
+            lb_logado_perfil.Visible = false;
+
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -80,6 +78,36 @@ namespace ProjetoIntegrado
 
         private void btn_login_Click(object sender, EventArgs e)
         {
+            verifica_acesso VA = new verifica_acesso();
+            Boolean troca_senha = false;
+            user_scmod reg_user = new user_scmod();
+            try
+            {
+                if (VA.pesquisa_BD(txt_user.Text.ToString(), txt_pass.Text.ToString(),out troca_senha,out reg_user))
+                {
+                    if (troca_senha)
+                        MessageBox.Show("Acesso Liberado : Você deve atualizar sua senha o mais breve possivel . \n \nPor mediadas de segurança não é aconselhavel usar a mesma senha por mais de 90 dias", "Acesso Liberado", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    MessageBox.Show("Conteudo: " + reg_user.toString());
+                    if (reg_user.STATUS == "bloqueado    ")
+                    {
+                        MessageBox.Show("Acesso Valido porem seu perfil encontrase Bloqueado", "Acesso Valido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    }
+                    else
+                    {
+                        ativa_perfil(int.Parse(reg_user.PERFIL));
+                    }
+                    
+                    gb_login.Visible = false;
+                    lb_logado.Text = "Logado como: " + reg_user.NOME;
+                    lb_logado_perfil.Text = "Seu perfil é: " + perfil_tipo;
+                    lb_logado.Visible = true;
+                    lb_logado_perfil.Visible = true;
+                }
+            }
+            catch (System.ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
         private void ll_avaliar_senha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -128,6 +156,29 @@ namespace ProjetoIntegrado
             {
                 MessageBox.Show(ex.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txt_pass.Focus();
+            }
+        }
+
+        private void ativa_perfil(int perfil)
+        {
+            switch (perfil)
+            {
+                case 1:
+                    MNcalc_data.Enabled = true;
+                    perfil_tipo = "Administrador";
+                    break;
+                case 2:
+                    MNcalc_data.Enabled = true;
+                    perfil_tipo = "Gerente";
+                    break;
+                case 3:
+                    MNcalc_data.Enabled = true;
+                    perfil_tipo = "Operador";
+                    break;
+                case 4:
+                    MNcalc_data.Enabled = true;
+                    perfil_tipo = "Estagiario";
+                    break;
             }
         }
     }

@@ -1,0 +1,78 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ProjetoIntegrado
+{
+    class verifica_acesso
+    {
+        string arquivo;
+        string registro;
+
+        public user_scmod reg_user = new user_scmod();
+        
+        public Boolean pesquisa_BD (String ID , String senha, out Boolean troca_senha, out user_scmod out_reg_user){
+            arquivo = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            arquivo += @"\BD.txt";
+            Console.WriteLine("arquivo: " + arquivo);
+
+            if (String.IsNullOrEmpty(arquivo))
+                throw new System.ArgumentException("Arquivo Invalido");
+
+            Boolean usuario_cadastrado = false;
+            troca_senha = false;
+            using (StreamReader linha = new StreamReader(arquivo))
+            {
+                while ((registro = linha.ReadLine()) != null)
+                {
+                    Console.WriteLine(registro.ToString());
+                    Console.WriteLine("-----------------------------");
+                    reg_user.ID = registro.Substring(0, 11);
+                    Console.WriteLine("ID:" + reg_user.ID);
+                    reg_user.SENHA = registro.Substring(11, 11);
+                    Console.WriteLine("SENHA:" + reg_user.SENHA);
+                    reg_user.DATA_ATUALIZACAO=DateTime.Parse(registro.Substring(22, 10));
+                    Console.WriteLine("DATA_ATUALIZACAO:" + reg_user.DATA_ATUALIZACAO);
+                    reg_user.NOME = registro.Substring(32,30);
+                    Console.WriteLine("NOME:" + reg_user.NOME);
+                    reg_user.RG = registro.Substring(62,9);
+                    Console.WriteLine("RG:" + reg_user.RG);
+                    reg_user.STATUS = registro.Substring(71, 13);
+                    Console.WriteLine("STATUS:" + reg_user.STATUS);
+                    reg_user.PERFIL= registro.Substring(84,1);
+                    Console.WriteLine("PERFIL:" + reg_user.PERFIL);
+                    Console.WriteLine("-----------------------------");
+                    Console.WriteLine(reg_user.ID + "-----" + ID);
+                    if (reg_user.ID==ID)
+                    {
+                        usuario_cadastrado = true;
+                        break;
+                    }
+                }
+                if (usuario_cadastrado)
+                {
+                    Console.WriteLine(reg_user.SENHA + "-----" + senha);
+                    if (String.Compare(reg_user.SENHA, senha) == 0)
+                    {
+                        DateTime DATA_ATUAL = System.DateTime.Now;
+                        if (DATA_ATUAL.Subtract(reg_user.DATA_ATUALIZACAO).TotalDays> 90)
+                            troca_senha = true;
+                        out_reg_user = reg_user;
+                        return true;
+                    }
+                    else
+                    {
+                        throw new System.ArgumentException("Senha Invalida.");
+                    }
+                }
+                else
+                {
+                    throw new System.ArgumentException("Usuario nao existe");
+                }
+            }
+        }
+    }
+}
