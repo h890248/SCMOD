@@ -81,7 +81,7 @@ namespace ProjetoIntegrado
             }
         }
 
-        public void alteraRegistro(user_scmod reg_user)
+        public Boolean alteraRegistro(user_scmod reg_user)
         {
             abrirBD();
             StreamReader linha = new StreamReader(arquivo);
@@ -91,7 +91,7 @@ namespace ProjetoIntegrado
                 string s = linha.ReadLine();
                 if (s.IndexOf(reg_user.ID) > -1)
                 {
-                    string tmp = reg_user.ID + reg_user.SENHA + reg_user.DATA_ATUALIZACAO.ToShortDateString() + reg_user.NOME +reg_user.RG+reg_user.STATUS+reg_user.PERFIL.ToString();
+                    string tmp = reg_user.ID + reg_user.SENHA + reg_user.DATA_ATUALIZACAO.ToShortDateString() + reg_user.NOME.PadRight(30) + reg_user.RG.PadRight(9) + reg_user.STATUS + reg_user.PERFIL.ToString();
                     sb.AppendLine(tmp);
                 }
                 else
@@ -103,6 +103,7 @@ namespace ProjetoIntegrado
             StreamWriter writer = new StreamWriter(arquivo);
             writer.Write(sb);
             writer.Close();
+            return true;
         }
         public void incluiRegistro(user_scmod reg_user)
         {

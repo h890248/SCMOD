@@ -26,8 +26,6 @@ namespace ProjetoIntegrado
             MNcalc_data.Enabled = false;
             txt_user.Select();
             txt_pass.PasswordChar = '*';
-            lb_logado.Visible = false;
-            lb_logado_perfil.Visible = false;
             btn_perfil.Visible = false;
 
         }
@@ -99,10 +97,6 @@ namespace ProjetoIntegrado
                     }
                     
                     gb_login.Visible = false;
-                    lb_logado.Text = "Logado como: " + reg_user.NOME;
-                    lb_logado_perfil.Text = "Seu perfil é: " + perfil_tipo;
-                    lb_logado.Visible = true;
-                    lb_logado_perfil.Visible = true;
                 }
             }
             catch (System.ArgumentException ex)

@@ -41,8 +41,6 @@
             this.pic_logo = new System.Windows.Forms.PictureBox();
             this.ll_avaliar_senha = new System.Windows.Forms.LinkLabel();
             this.gb_login = new System.Windows.Forms.GroupBox();
-            this.lb_logado = new System.Windows.Forms.Label();
-            this.lb_logado_perfil = new System.Windows.Forms.Label();
             this.btn_perfil = new System.Windows.Forms.Button();
             this.menu_s_index.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).BeginInit();
@@ -185,33 +183,15 @@
             this.gb_login.Controls.Add(this.btn_login);
             this.gb_login.Controls.Add(this.label2);
             this.gb_login.Controls.Add(this.txt_pass);
-            this.gb_login.Location = new System.Drawing.Point(78, 190);
+            this.gb_login.Location = new System.Drawing.Point(80, 210);
             this.gb_login.Name = "gb_login";
             this.gb_login.Size = new System.Drawing.Size(334, 168);
             this.gb_login.TabIndex = 6;
             this.gb_login.TabStop = false;
             // 
-            // lb_logado
-            // 
-            this.lb_logado.AutoSize = true;
-            this.lb_logado.Location = new System.Drawing.Point(108, 226);
-            this.lb_logado.Name = "lb_logado";
-            this.lb_logado.Size = new System.Drawing.Size(41, 15);
-            this.lb_logado.TabIndex = 8;
-            this.lb_logado.Text = "label4";
-            // 
-            // lb_logado_perfil
-            // 
-            this.lb_logado_perfil.AutoSize = true;
-            this.lb_logado_perfil.Location = new System.Drawing.Point(108, 263);
-            this.lb_logado_perfil.Name = "lb_logado_perfil";
-            this.lb_logado_perfil.Size = new System.Drawing.Size(41, 15);
-            this.lb_logado_perfil.TabIndex = 9;
-            this.lb_logado_perfil.Text = "label4";
-            // 
             // btn_perfil
             // 
-            this.btn_perfil.Location = new System.Drawing.Point(111, 299);
+            this.btn_perfil.Location = new System.Drawing.Point(176, 279);
             this.btn_perfil.Name = "btn_perfil";
             this.btn_perfil.Size = new System.Drawing.Size(167, 23);
             this.btn_perfil.TabIndex = 10;
@@ -227,8 +207,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(521, 408);
             this.Controls.Add(this.btn_perfil);
-            this.Controls.Add(this.lb_logado_perfil);
-            this.Controls.Add(this.lb_logado);
             this.Controls.Add(this.pic_logo);
             this.Controls.Add(this.menu_s_index);
             this.Controls.Add(this.gb_login);
@@ -266,8 +244,6 @@
         private System.Windows.Forms.ToolStripMenuItem MNcalc_data;
         private System.Windows.Forms.LinkLabel ll_avaliar_senha;
         private System.Windows.Forms.GroupBox gb_login;
-        private System.Windows.Forms.Label lb_logado;
-        private System.Windows.Forms.Label lb_logado_perfil;
         private System.Windows.Forms.Button btn_perfil;
     }
 }

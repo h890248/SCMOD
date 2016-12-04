@@ -13,21 +13,52 @@ namespace ProjetoIntegrado
     public partial class frm_perfil : Form
     {
         user_scmod reg_tmp = new user_scmod();
+        verifica_acesso VA = new verifica_acesso();
+
         public frm_perfil(user_scmod reg_user)
         {
             InitializeComponent();
-            txt_ID.Text = reg_user.ID;
-            txt_nome.Text = reg_user.NOME;
-            txt_data.Text = reg_user.DATA_ATUALIZACAO.ToShortDateString();
-            txt_perfil.Text = reg_user.PERFIL;
-            txt_rg.Text = reg_user.RG;
-            txt_senha.Text = reg_user.SENHA;
-            txt_status.Text = reg_user.STATUS;
+            txt_senha.PasswordChar = '*';
+            txt_data.Enabled = false;
+            txt_ID.Enabled = false;
+            txt_perfil.Enabled = false;
+            txt_senha.Enabled = false;
+            txt_status.Enabled = false;
+            carrega_dados(reg_user);
+            
+        }
+
+        private void carrega_dados(user_scmod reg_user)
+        {
+            Boolean change_pass;
+            if (VA.pesquisa_BD(reg_user.ID,reg_user.SENHA,out change_pass,out reg_tmp)){
+                txt_ID.Text = reg_tmp.ID;
+                txt_nome.Text = reg_tmp.NOME;
+                txt_data.Text = reg_tmp.DATA_ATUALIZACAO.ToShortDateString();
+                txt_perfil.Text = reg_tmp.PERFIL;
+                txt_rg.Text = reg_tmp.RG;
+                txt_senha.Text = reg_tmp.SENHA;
+                txt_status.Text = reg_tmp.STATUS;
+                switch (reg_tmp.PERFIL)
+                {
+                    case "1":
+                        txt_perfil.Text = "Administrador";
+                        break;
+                    case "2":
+                        txt_perfil.Text = "Gerente";
+                        break;
+                    case "3":
+                        txt_perfil.Text = "Operador";
+                        break;
+                    case "4":
+                        txt_perfil.Text = "Estagiario";
+                        break;
+                }
+            }
         }
 
         private void btn_gravar_Click(object sender, EventArgs e)
         {
-            verifica_acesso VA = new verifica_acesso();
             reg_tmp.ID = txt_ID.Text;
             reg_tmp.NOME = txt_nome.Text;
             reg_tmp.DATA_ATUALIZACAO = DateTime.Parse(txt_data.Text);
@@ -47,12 +78,16 @@ namespace ProjetoIntegrado
             Console.WriteLine("-----------------------------");
             try
             {
-                VA.alteraRegistro(reg_tmp);
+                if (VA.alteraRegistro(reg_tmp))
+                {
+                    MessageBox.Show("Alteraçoes gravadas com sucesso !!", "Informativo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch (System.Exception ex)
             {
                 MessageBox.Show(ex.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+            carrega_dados(reg_tmp);
         }
     }
 }
