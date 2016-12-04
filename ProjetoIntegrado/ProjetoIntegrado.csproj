@@ -69,6 +69,12 @@
     <Compile Include="frm_index.Designer.cs">
       <DependentUpon>frm_index.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_perfil.Designer.cs">
+      <DependentUpon>frm_perfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_temperatura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,9 @@
     <Compile Include="verifica_acesso.cs" />
     <EmbeddedResource Include="frm_index.resx">
       <DependentUpon>frm_index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_perfil.resx">
+      <DependentUpon>frm_perfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_temperatura.resx">
       <DependentUpon>frm_temperatura.cs</DependentUpon>

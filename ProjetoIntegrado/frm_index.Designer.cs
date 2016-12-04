@@ -43,6 +43,7 @@
             this.gb_login = new System.Windows.Forms.GroupBox();
             this.lb_logado = new System.Windows.Forms.Label();
             this.lb_logado_perfil = new System.Windows.Forms.Label();
+            this.btn_perfil = new System.Windows.Forms.Button();
             this.menu_s_index.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).BeginInit();
             this.gb_login.SuspendLayout();
@@ -184,7 +185,7 @@
             this.gb_login.Controls.Add(this.btn_login);
             this.gb_login.Controls.Add(this.label2);
             this.gb_login.Controls.Add(this.txt_pass);
-            this.gb_login.Location = new System.Drawing.Point(76, 199);
+            this.gb_login.Location = new System.Drawing.Point(78, 190);
             this.gb_login.Name = "gb_login";
             this.gb_login.Size = new System.Drawing.Size(334, 168);
             this.gb_login.TabIndex = 6;
@@ -208,6 +209,16 @@
             this.lb_logado_perfil.TabIndex = 9;
             this.lb_logado_perfil.Text = "label4";
             // 
+            // btn_perfil
+            // 
+            this.btn_perfil.Location = new System.Drawing.Point(111, 299);
+            this.btn_perfil.Name = "btn_perfil";
+            this.btn_perfil.Size = new System.Drawing.Size(167, 23);
+            this.btn_perfil.TabIndex = 10;
+            this.btn_perfil.Text = "Meu Perfil Completo";
+            this.btn_perfil.UseVisualStyleBackColor = true;
+            this.btn_perfil.Click += new System.EventHandler(this.btn_perfil_Click);
+            // 
             // frm_inicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -215,6 +226,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(521, 408);
+            this.Controls.Add(this.btn_perfil);
             this.Controls.Add(this.lb_logado_perfil);
             this.Controls.Add(this.lb_logado);
             this.Controls.Add(this.pic_logo);
@@ -256,6 +268,7 @@
         private System.Windows.Forms.GroupBox gb_login;
         private System.Windows.Forms.Label lb_logado;
         private System.Windows.Forms.Label lb_logado_perfil;
+        private System.Windows.Forms.Button btn_perfil;
     }
 }
 

@@ -11,17 +11,19 @@ namespace ProjetoIntegrado
     {
         string arquivo;
         string registro;
-
         public user_scmod reg_user = new user_scmod();
-        
-        public Boolean pesquisa_BD (String ID , String senha, out Boolean troca_senha, out user_scmod out_reg_user){
+
+        private void abrirBD()
+        {
             arquivo = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             arquivo += @"\BD.txt";
             Console.WriteLine("arquivo: " + arquivo);
-
             if (!System.IO.File.Exists(arquivo))
                 throw new System.AccessViolationException("Arquivo de Banco Invalido !!");
-
+        }
+        
+        public Boolean pesquisa_BD (String ID , String senha, out Boolean troca_senha, out user_scmod out_reg_user){
+            abrirBD();
             Boolean usuario_cadastrado = false;
             troca_senha = false;
             using (StreamReader linha = new StreamReader(arquivo))
@@ -74,5 +76,81 @@ namespace ProjetoIntegrado
                 }
             }
         }
+
+        public void alteraRegistro(user_scmod reg_user)
+        {
+            abrirBD();
+            StreamReader linha = new StreamReader(arquivo);
+            StringBuilder sb = new StringBuilder();
+            while (!linha.EndOfStream)
+            {
+                string s = linha.ReadLine();
+                if (s.IndexOf(reg_user.ID) > -1)
+                {
+                    string tmp = reg_user.ID + reg_user.SENHA + reg_user.DATA_ATUALIZACAO.ToShortDateString() + reg_user.NOME +reg_user.RG+reg_user.STATUS+reg_user.PERFIL.ToString();
+                    sb.AppendLine(tmp);
+                }
+                else
+                {
+                    sb.AppendLine(s);
+                }
+            }
+            StreamWriter writer = new StreamWriter(arquivo);
+            writer.Write(sb);
+            writer.Close();
+        }
+        public void incluiRegistro(user_scmod reg_user)
+        {
+            abrirBD();
+            StreamWriter writer = new StreamWriter(arquivo);
+            string tmp = reg_user.ID + reg_user.SENHA + reg_user.DATA_ATUALIZACAO.ToShortDateString() + reg_user.NOME + reg_user.RG + reg_user.STATUS + reg_user.PERFIL.ToString();
+            writer.WriteLine(tmp);
+            writer.Close();
+        }
+
+        public StringBuilder todosIDs()
+        {
+            abrirBD();
+            StreamReader linha = new StreamReader(arquivo);
+            StringBuilder sb = new StringBuilder();
+            while (!linha.EndOfStream)
+            {
+                string s = linha.ReadLine();
+                sb.AppendLine(s.Substring(0, 11));
+            }
+            return sb;
+        }
+
+        public StringBuilder todosBloqueados()
+        {
+            abrirBD();
+            StreamReader linha = new StreamReader(arquivo);
+            StringBuilder sb = new StringBuilder();
+            while (!linha.EndOfStream)
+            {
+                string s = linha.ReadLine();
+
+                sb.AppendLine(s.Substring(0, 11));
+            }
+            return sb;
+        }
+
+        public StringBuilder todosPorPerfil(string perfil)
+        {
+            abrirBD();
+            StreamReader linha = new StreamReader(arquivo);
+            StringBuilder sb = new StringBuilder();
+            while (!linha.EndOfStream)
+            {
+                string s = linha.ReadLine();
+                string perfil_linha = s.Substring(84, 1);
+                if (perfil == perfil_linha)
+                {
+                    sb.AppendLine(s.Substring(0, 11));
+                }
+            }
+            return sb;
+        }
+
     }
 }

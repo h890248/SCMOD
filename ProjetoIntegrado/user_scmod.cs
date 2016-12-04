@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoIntegrado
 {
-    class user_scmod
+    public class user_scmod
     {
         public string ID;
         public string SENHA;

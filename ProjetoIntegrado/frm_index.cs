@@ -17,6 +17,7 @@ namespace ProjetoIntegrado
         Form frm_calculadata = new ProjetoIntegrado.frm_calculadata();
         double TEMP_COD_USR;
         string perfil_tipo;
+        public user_scmod reg_user = new user_scmod();
         
         public frm_inicial()
         {
@@ -27,6 +28,7 @@ namespace ProjetoIntegrado
             txt_pass.PasswordChar = '*';
             lb_logado.Visible = false;
             lb_logado_perfil.Visible = false;
+            btn_perfil.Visible = false;
 
         }
 
@@ -80,7 +82,6 @@ namespace ProjetoIntegrado
         {
             verifica_acesso VA = new verifica_acesso();
             Boolean troca_senha = false;
-            user_scmod reg_user = new user_scmod();
             try
             {
                 if (VA.pesquisa_BD(txt_user.Text.ToString(), txt_pass.Text.ToString(),out troca_senha,out reg_user))
@@ -174,16 +175,25 @@ namespace ProjetoIntegrado
                 case 2:
                     MNcalc_data.Enabled = true;
                     perfil_tipo = "Gerente";
+                    btn_perfil.Visible = true;
                     break;
                 case 3:
                     MNcalc_data.Enabled = true;
                     perfil_tipo = "Operador";
+                    btn_perfil.Visible = true;
                     break;
                 case 4:
                     MNcalc_data.Enabled = true;
                     perfil_tipo = "Estagiario";
+                    btn_perfil.Visible = true;
                     break;
             }
+        }
+
+        private void btn_perfil_Click(object sender, EventArgs e)
+        {
+            Form frm_perfil = new ProjetoIntegrado.frm_perfil(reg_user);
+            frm_perfil.ShowDialog();
         }
     }
 }
