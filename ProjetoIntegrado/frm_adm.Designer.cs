@@ -53,7 +53,7 @@
             this.btn_gravar = new System.Windows.Forms.Button();
             this.rb_bloqueado = new System.Windows.Forms.RadioButton();
             this.rb_desbloqueado = new System.Windows.Forms.RadioButton();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmb_inc_perfil = new System.Windows.Forms.ComboBox();
             this.cb_reset_pass = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
             this.gb_registro = new System.Windows.Forms.GroupBox();
@@ -70,6 +70,7 @@
             this.btn_incluir.TabIndex = 0;
             this.btn_incluir.Text = "Incluir Usuario";
             this.btn_incluir.UseVisualStyleBackColor = true;
+            this.btn_incluir.Click += new System.EventHandler(this.btn_incluir_Click);
             // 
             // btn_alterar
             // 
@@ -100,7 +101,7 @@
             // 
             // txt_rg
             // 
-            this.txt_rg.Location = new System.Drawing.Point(51, 183);
+            this.txt_rg.Location = new System.Drawing.Point(74, 191);
             this.txt_rg.MaxLength = 9;
             this.txt_rg.Name = "txt_rg";
             this.txt_rg.Size = new System.Drawing.Size(169, 20);
@@ -109,7 +110,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 209);
+            this.label7.Location = new System.Drawing.Point(30, 217);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(37, 13);
             this.label7.TabIndex = 25;
@@ -118,7 +119,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(22, 186);
+            this.label6.Location = new System.Drawing.Point(45, 194);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(23, 13);
             this.label6.TabIndex = 24;
@@ -127,7 +128,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 160);
+            this.label5.Location = new System.Drawing.Point(38, 168);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 13);
             this.label5.TabIndex = 23;
@@ -136,7 +137,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(-19, 134);
+            this.label4.Location = new System.Drawing.Point(4, 142);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 13);
             this.label4.TabIndex = 22;
@@ -145,7 +146,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 108);
+            this.label3.Location = new System.Drawing.Point(30, 116);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 21;
@@ -154,7 +155,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 82);
+            this.label2.Location = new System.Drawing.Point(33, 90);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 20;
@@ -163,7 +164,7 @@
             // ID
             // 
             this.ID.AutoSize = true;
-            this.ID.Location = new System.Drawing.Point(27, 56);
+            this.ID.Location = new System.Drawing.Point(50, 64);
             this.ID.Name = "ID";
             this.ID.Size = new System.Drawing.Size(18, 13);
             this.ID.TabIndex = 19;
@@ -171,21 +172,22 @@
             // 
             // txt_data
             // 
-            this.txt_data.Location = new System.Drawing.Point(51, 131);
+            this.txt_data.Location = new System.Drawing.Point(74, 139);
             this.txt_data.Name = "txt_data";
             this.txt_data.Size = new System.Drawing.Size(118, 20);
             this.txt_data.TabIndex = 17;
             // 
             // txt_senha
             // 
-            this.txt_senha.Location = new System.Drawing.Point(51, 105);
+            this.txt_senha.Location = new System.Drawing.Point(74, 113);
+            this.txt_senha.MaxLength = 11;
             this.txt_senha.Name = "txt_senha";
             this.txt_senha.Size = new System.Drawing.Size(169, 20);
             this.txt_senha.TabIndex = 16;
             // 
             // txt_nome
             // 
-            this.txt_nome.Location = new System.Drawing.Point(51, 79);
+            this.txt_nome.Location = new System.Drawing.Point(74, 87);
             this.txt_nome.MaxLength = 30;
             this.txt_nome.Name = "txt_nome";
             this.txt_nome.Size = new System.Drawing.Size(285, 20);
@@ -193,13 +195,15 @@
             // 
             // txt_ID
             // 
-            this.txt_ID.Location = new System.Drawing.Point(51, 53);
+            this.txt_ID.Location = new System.Drawing.Point(74, 61);
+            this.txt_ID.MaxLength = 11;
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(169, 20);
             this.txt_ID.TabIndex = 14;
             // 
             // cmb_alterar
             // 
+            this.cmb_alterar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_alterar.FormattingEnabled = true;
             this.cmb_alterar.Location = new System.Drawing.Point(9, 50);
             this.cmb_alterar.Name = "cmb_alterar";
@@ -265,11 +269,12 @@
             this.btn_gravar.TabIndex = 34;
             this.btn_gravar.Text = "Gravar Registro";
             this.btn_gravar.UseVisualStyleBackColor = true;
+            this.btn_gravar.Click += new System.EventHandler(this.btn_gravar_Click);
             // 
             // rb_bloqueado
             // 
             this.rb_bloqueado.AutoSize = true;
-            this.rb_bloqueado.Location = new System.Drawing.Point(51, 209);
+            this.rb_bloqueado.Location = new System.Drawing.Point(74, 217);
             this.rb_bloqueado.Name = "rb_bloqueado";
             this.rb_bloqueado.Size = new System.Drawing.Size(76, 17);
             this.rb_bloqueado.TabIndex = 35;
@@ -280,7 +285,7 @@
             // rb_desbloqueado
             // 
             this.rb_desbloqueado.AutoSize = true;
-            this.rb_desbloqueado.Location = new System.Drawing.Point(135, 209);
+            this.rb_desbloqueado.Location = new System.Drawing.Point(158, 217);
             this.rb_desbloqueado.Name = "rb_desbloqueado";
             this.rb_desbloqueado.Size = new System.Drawing.Size(94, 17);
             this.rb_desbloqueado.TabIndex = 36;
@@ -288,18 +293,24 @@
             this.rb_desbloqueado.Text = "Desbloqueado";
             this.rb_desbloqueado.UseVisualStyleBackColor = true;
             // 
-            // comboBox3
+            // cmb_inc_perfil
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(51, 156);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(142, 21);
-            this.comboBox3.TabIndex = 30;
+            this.cmb_inc_perfil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_inc_perfil.FormattingEnabled = true;
+            this.cmb_inc_perfil.Items.AddRange(new object[] {
+            "Administrador",
+            "Gerente",
+            "Operador",
+            "Estagiario"});
+            this.cmb_inc_perfil.Location = new System.Drawing.Point(74, 164);
+            this.cmb_inc_perfil.Name = "cmb_inc_perfil";
+            this.cmb_inc_perfil.Size = new System.Drawing.Size(142, 21);
+            this.cmb_inc_perfil.TabIndex = 30;
             // 
             // cb_reset_pass
             // 
             this.cb_reset_pass.AutoSize = true;
-            this.cb_reset_pass.Location = new System.Drawing.Point(231, 108);
+            this.cb_reset_pass.Location = new System.Drawing.Point(254, 116);
             this.cb_reset_pass.Name = "cb_reset_pass";
             this.cb_reset_pass.Size = new System.Drawing.Size(97, 17);
             this.cb_reset_pass.TabIndex = 38;
@@ -323,7 +334,7 @@
             this.gb_registro.Controls.Add(this.label6);
             this.gb_registro.Controls.Add(this.cb_reset_pass);
             this.gb_registro.Controls.Add(this.label2);
-            this.gb_registro.Controls.Add(this.comboBox3);
+            this.gb_registro.Controls.Add(this.cmb_inc_perfil);
             this.gb_registro.Controls.Add(this.ID);
             this.gb_registro.Controls.Add(this.rb_desbloqueado);
             this.gb_registro.Controls.Add(this.label5);
@@ -395,9 +406,9 @@
         private System.Windows.Forms.Button btn_gravar;
         private System.Windows.Forms.RadioButton rb_bloqueado;
         private System.Windows.Forms.RadioButton rb_desbloqueado;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.CheckBox cb_reset_pass;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox gb_registro;
+        public System.Windows.Forms.ComboBox cmb_inc_perfil;
     }
 }

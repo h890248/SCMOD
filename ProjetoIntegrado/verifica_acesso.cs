@@ -91,7 +91,7 @@ namespace ProjetoIntegrado
                 string s = linha.ReadLine();
                 if (s.IndexOf(reg_user.ID) > -1)
                 {
-                    string tmp = reg_user.ID + reg_user.SENHA + reg_user.DATA_ATUALIZACAO.ToShortDateString() + reg_user.NOME.PadRight(30) + reg_user.RG.PadRight(9) + reg_user.STATUS + reg_user.PERFIL.ToString();
+                    string tmp = reg_user.ID.PadRight(11) + reg_user.SENHA.PadRight(11) + reg_user.DATA_ATUALIZACAO.ToShortDateString() + reg_user.NOME.PadRight(30) + reg_user.RG.PadRight(9) + reg_user.STATUS.PadRight(13) + reg_user.PERFIL.ToString().PadRight(1);
                     sb.AppendLine(tmp);
                 }
                 else
@@ -105,13 +105,23 @@ namespace ProjetoIntegrado
             writer.Close();
             return true;
         }
-        public void incluiRegistro(user_scmod reg_user)
+        public Boolean incluiRegistro(user_scmod reg_user)
         {
             abrirBD();
+            StreamReader linha = new StreamReader(arquivo);
+            StringBuilder sb = new StringBuilder();
+            while (!linha.EndOfStream)
+            {
+                string s = linha.ReadLine();
+                sb.AppendLine(s);
+            }
+            string tmp = reg_user.ID.PadRight(11) + reg_user.SENHA.PadRight(11) + reg_user.DATA_ATUALIZACAO.ToShortDateString() + reg_user.NOME.PadRight(30) + reg_user.RG.PadRight(9) + reg_user.STATUS.PadRight(13) + reg_user.PERFIL.ToString().PadRight(1);
+            sb.AppendLine(tmp);
+            linha.Close();
             StreamWriter writer = new StreamWriter(arquivo);
-            string tmp = reg_user.ID + reg_user.SENHA + reg_user.DATA_ATUALIZACAO.ToShortDateString() + reg_user.NOME + reg_user.RG + reg_user.STATUS + reg_user.PERFIL.ToString();
-            writer.WriteLine(tmp);
+            writer.Write(sb);
             writer.Close();
+            return true;
         }
 
         public StringBuilder todosIDs()
