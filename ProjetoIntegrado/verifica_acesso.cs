@@ -48,7 +48,7 @@ namespace ProjetoIntegrado
                     Console.WriteLine("PERFIL:" + reg_user.PERFIL);
                     Console.WriteLine("-----------------------------");
                     Console.WriteLine(reg_user.ID + "-----" + ID);
-                    if (reg_user.ID==ID)
+                    if (reg_user.ID==ID.PadRight(11))
                     {
                         usuario_cadastrado = true;
                         break;
@@ -58,7 +58,7 @@ namespace ProjetoIntegrado
                 if (usuario_cadastrado)
                 {
                     Console.WriteLine(reg_user.SENHA + "-----" + senha);
-                    if (String.Compare(reg_user.SENHA, senha) == 0)
+                    if (String.Compare(reg_user.SENHA, senha.PadRight(11)) == 0)
                     {
                         DateTime DATA_ATUAL = System.DateTime.Now;
                         if (DATA_ATUAL.Subtract(reg_user.DATA_ATUALIZACAO).TotalDays> 90)

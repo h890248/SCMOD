@@ -27,6 +27,7 @@ namespace ProjetoIntegrado
             txt_user.Select();
             txt_pass.PasswordChar = '*';
             btn_perfil.Visible = false;
+            btn_adm.Visible = false;
 
         }
 
@@ -165,6 +166,8 @@ namespace ProjetoIntegrado
                 case 1:
                     MNcalc_data.Enabled = true;
                     perfil_tipo = "Administrador";
+                    Console.Write("Chegou aqui");
+                    btn_adm.Visible = true;
                     break;
                 case 2:
                     MNcalc_data.Enabled = true;
@@ -188,6 +191,12 @@ namespace ProjetoIntegrado
         {
             Form frm_perfil = new ProjetoIntegrado.frm_perfil(reg_user);
             frm_perfil.ShowDialog();
+        }
+
+        private void btn_adm_Click(object sender, EventArgs e)
+        {
+            Form frm_adm = new ProjetoIntegrado.frm_adm();
+            frm_adm.ShowDialog();
         }
     }
 }

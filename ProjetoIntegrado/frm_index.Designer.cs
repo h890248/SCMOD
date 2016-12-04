@@ -42,6 +42,7 @@
             this.ll_avaliar_senha = new System.Windows.Forms.LinkLabel();
             this.gb_login = new System.Windows.Forms.GroupBox();
             this.btn_perfil = new System.Windows.Forms.Button();
+            this.btn_adm = new System.Windows.Forms.Button();
             this.menu_s_index.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).BeginInit();
             this.gb_login.SuspendLayout();
@@ -183,7 +184,7 @@
             this.gb_login.Controls.Add(this.btn_login);
             this.gb_login.Controls.Add(this.label2);
             this.gb_login.Controls.Add(this.txt_pass);
-            this.gb_login.Location = new System.Drawing.Point(80, 210);
+            this.gb_login.Location = new System.Drawing.Point(77, 196);
             this.gb_login.Name = "gb_login";
             this.gb_login.Size = new System.Drawing.Size(334, 168);
             this.gb_login.TabIndex = 6;
@@ -191,13 +192,23 @@
             // 
             // btn_perfil
             // 
-            this.btn_perfil.Location = new System.Drawing.Point(176, 279);
+            this.btn_perfil.Location = new System.Drawing.Point(174, 258);
             this.btn_perfil.Name = "btn_perfil";
             this.btn_perfil.Size = new System.Drawing.Size(167, 23);
             this.btn_perfil.TabIndex = 10;
             this.btn_perfil.Text = "Meu Perfil Completo";
             this.btn_perfil.UseVisualStyleBackColor = true;
             this.btn_perfil.Click += new System.EventHandler(this.btn_perfil_Click);
+            // 
+            // btn_adm
+            // 
+            this.btn_adm.Location = new System.Drawing.Point(174, 229);
+            this.btn_adm.Name = "btn_adm";
+            this.btn_adm.Size = new System.Drawing.Size(167, 23);
+            this.btn_adm.TabIndex = 11;
+            this.btn_adm.Text = "Painel do Administrador";
+            this.btn_adm.UseVisualStyleBackColor = true;
+            this.btn_adm.Click += new System.EventHandler(this.btn_adm_Click);
             // 
             // frm_inicial
             // 
@@ -206,6 +217,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(521, 408);
+            this.Controls.Add(this.btn_adm);
             this.Controls.Add(this.btn_perfil);
             this.Controls.Add(this.pic_logo);
             this.Controls.Add(this.menu_s_index);
@@ -245,6 +257,7 @@
         private System.Windows.Forms.LinkLabel ll_avaliar_senha;
         private System.Windows.Forms.GroupBox gb_login;
         private System.Windows.Forms.Button btn_perfil;
+        private System.Windows.Forms.Button btn_adm;
     }
 }
 

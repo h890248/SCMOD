@@ -203,7 +203,8 @@
             this.Controls.Add(this.txt_nome);
             this.Controls.Add(this.txt_ID);
             this.Name = "frm_perfil";
-            this.Text = "frm_perfil";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Meu Perfil";
             this.ResumeLayout(false);
             this.PerformLayout();
 
