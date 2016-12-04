@@ -54,6 +54,7 @@ namespace ProjetoIntegrado
                         break;
                     }
                 }
+                linha.Close();
                 if (usuario_cadastrado)
                 {
                     Console.WriteLine(reg_user.SENHA + "-----" + senha);
@@ -63,15 +64,18 @@ namespace ProjetoIntegrado
                         if (DATA_ATUAL.Subtract(reg_user.DATA_ATUALIZACAO).TotalDays> 90)
                             troca_senha = true;
                         out_reg_user = reg_user;
+                        linha.Close();
                         return true;
                     }
                     else
                     {
+                        linha.Close();
                         throw new System.ArgumentException("Senha Invalida.");
                     }
                 }
                 else
                 {
+                    linha.Close();
                     throw new System.ArgumentException("Usuario nao existe");
                 }
             }
@@ -95,6 +99,7 @@ namespace ProjetoIntegrado
                     sb.AppendLine(s);
                 }
             }
+            linha.Close();
             StreamWriter writer = new StreamWriter(arquivo);
             writer.Write(sb);
             writer.Close();

@@ -42,6 +42,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txt_rg = new System.Windows.Forms.TextBox();
             this.txt_status = new System.Windows.Forms.TextBox();
+            this.btn_gravar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_ID
@@ -156,11 +157,22 @@
             this.txt_status.Size = new System.Drawing.Size(263, 20);
             this.txt_status.TabIndex = 13;
             // 
+            // btn_gravar
+            // 
+            this.btn_gravar.Location = new System.Drawing.Point(214, 303);
+            this.btn_gravar.Name = "btn_gravar";
+            this.btn_gravar.Size = new System.Drawing.Size(75, 23);
+            this.btn_gravar.TabIndex = 14;
+            this.btn_gravar.Text = "Gravar";
+            this.btn_gravar.UseVisualStyleBackColor = true;
+            this.btn_gravar.Click += new System.EventHandler(this.btn_gravar_Click);
+            // 
             // frm_perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(530, 337);
+            this.ClientSize = new System.Drawing.Size(542, 390);
+            this.Controls.Add(this.btn_gravar);
             this.Controls.Add(this.txt_status);
             this.Controls.Add(this.txt_rg);
             this.Controls.Add(this.label7);
@@ -198,5 +210,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_rg;
         private System.Windows.Forms.TextBox txt_status;
+        private System.Windows.Forms.Button btn_gravar;
     }
 }
