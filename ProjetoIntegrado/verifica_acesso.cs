@@ -19,8 +19,8 @@ namespace ProjetoIntegrado
             arquivo += @"\BD.txt";
             Console.WriteLine("arquivo: " + arquivo);
 
-            if (String.IsNullOrEmpty(arquivo))
-                throw new System.ArgumentException("Arquivo Invalido");
+            if (!System.IO.File.Exists(arquivo))
+                throw new System.AccessViolationException("Arquivo de Banco Invalido !!");
 
             Boolean usuario_cadastrado = false;
             troca_senha = false;

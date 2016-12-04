@@ -108,6 +108,10 @@ namespace ProjetoIntegrado
             {
                 MessageBox.Show(ex.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+            catch (System.AccessViolationException ex)
+            {
+                MessageBox.Show(ex.Message, "Erro Grave", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ll_avaliar_senha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
