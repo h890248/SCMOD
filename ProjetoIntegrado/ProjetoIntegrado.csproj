@@ -69,6 +69,24 @@
     <Compile Include="frm_adm.Designer.cs">
       <DependentUpon>frm_adm.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_all_bloqueados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_all_bloqueados.Designer.cs">
+      <DependentUpon>frm_all_bloqueados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_all_perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_all_perfil.Designer.cs">
+      <DependentUpon>frm_all_perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_alterarsenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_alterarsenha.Designer.cs">
+      <DependentUpon>frm_alterarsenha.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_index.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +124,15 @@
     <Compile Include="verifica_acesso.cs" />
     <EmbeddedResource Include="frm_adm.resx">
       <DependentUpon>frm_adm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_all_bloqueados.resx">
+      <DependentUpon>frm_all_bloqueados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_all_perfil.resx">
+      <DependentUpon>frm_all_perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_alterarsenha.resx">
+      <DependentUpon>frm_alterarsenha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_index.resx">
       <DependentUpon>frm_index.cs</DependentUpon>

@@ -44,6 +44,7 @@
             this.txt_status = new System.Windows.Forms.TextBox();
             this.btn_gravar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.lk_alterarSenha = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // txt_ID
@@ -181,11 +182,23 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "Meu Perfil:";
             // 
+            // lk_alterarSenha
+            // 
+            this.lk_alterarSenha.AutoSize = true;
+            this.lk_alterarSenha.Location = new System.Drawing.Point(289, 173);
+            this.lk_alterarSenha.Name = "lk_alterarSenha";
+            this.lk_alterarSenha.Size = new System.Drawing.Size(71, 13);
+            this.lk_alterarSenha.TabIndex = 26;
+            this.lk_alterarSenha.TabStop = true;
+            this.lk_alterarSenha.Text = "Alterar Senha";
+            this.lk_alterarSenha.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lk_alterarSenha_LinkClicked);
+            // 
             // frm_perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 363);
+            this.Controls.Add(this.lk_alterarSenha);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_gravar);
             this.Controls.Add(this.txt_status);
@@ -228,5 +241,6 @@
         private System.Windows.Forms.TextBox txt_status;
         private System.Windows.Forms.Button btn_gravar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel lk_alterarSenha;
     }
 }

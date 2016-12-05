@@ -62,9 +62,7 @@ namespace ProjetoIntegrado
             reg_tmp.ID = txt_ID.Text;
             reg_tmp.NOME = txt_nome.Text;
             reg_tmp.DATA_ATUALIZACAO = DateTime.Parse(txt_data.Text);
-            reg_tmp.PERFIL = txt_perfil.Text;
             reg_tmp.RG = txt_rg.Text;
-            reg_tmp.SENHA = txt_senha.Text;
             reg_tmp.STATUS = txt_status.Text;
             Console.WriteLine(reg_tmp.ToString());
             Console.WriteLine("---------- GRAVAR------------");
@@ -87,7 +85,44 @@ namespace ProjetoIntegrado
             {
                 MessageBox.Show(ex.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            carrega_dados(reg_tmp);
+            Close();
+        }
+
+        private void lk_alterarSenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            reg_tmp.ID = txt_ID.Text;
+            reg_tmp.NOME = txt_nome.Text;
+            reg_tmp.DATA_ATUALIZACAO = DateTime.Parse(txt_data.Text);
+            switch (txt_perfil.Text)
+            {
+                case "Administrador":
+                    reg_tmp.PERFIL = "1";
+                    break;
+                case "Gerente":
+                    reg_tmp.PERFIL = "2";
+                    break;
+                case "Operador":
+                    reg_tmp.PERFIL = "3";
+                    break;
+                case "Estagiario":
+                    reg_tmp.PERFIL = "4";
+                    break;
+            }
+            reg_tmp.RG = txt_rg.Text;
+            reg_tmp.SENHA = txt_senha.Text;
+            reg_tmp.STATUS = txt_status.Text;
+            Console.WriteLine(reg_tmp.ToString());
+            Console.WriteLine("---------- GRAVAR------------");
+            Console.WriteLine("ID:" + reg_tmp.ID);
+            Console.WriteLine("SENHA:" + reg_tmp.SENHA);
+            Console.WriteLine("DATA_ATUALIZACAO:" + reg_tmp.DATA_ATUALIZACAO);
+            Console.WriteLine("NOME:" + reg_tmp.NOME);
+            Console.WriteLine("RG:" + reg_tmp.RG);
+            Console.WriteLine("STATUS:" + reg_tmp.STATUS);
+            Console.WriteLine("PERFIL:" + reg_tmp.PERFIL);
+            Console.WriteLine("-----------------------------");
+            frm_alterarsenha frm_alterarsenha = new frm_alterarsenha(reg_tmp);
+            frm_alterarsenha.Show();
         }
     }
 }

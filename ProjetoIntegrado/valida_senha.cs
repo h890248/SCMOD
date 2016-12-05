@@ -40,7 +40,7 @@ namespace ProjetoIntegrado
         }
 
         // REF 6.3
-        public static int qualitativo(string senha, string nome_usuario, double codigo_usuario)
+        public static int qualitativo(string senha, string nome_usuario, string codigo_usuario)
         {
             int nota = 10;
             int i = 0;

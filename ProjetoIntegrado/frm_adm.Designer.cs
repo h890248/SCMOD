@@ -57,6 +57,8 @@
             this.cb_reset_pass = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
             this.gb_registro = new System.Windows.Forms.GroupBox();
+            this.btn_cancel = new System.Windows.Forms.Button();
+            this.rb_sinicial = new System.Windows.Forms.RadioButton();
             this.gb_consulta.SuspendLayout();
             this.gb_alterar.SuspendLayout();
             this.gb_registro.SuspendLayout();
@@ -80,6 +82,7 @@
             this.btn_alterar.TabIndex = 1;
             this.btn_alterar.Text = "Selecionar Registro";
             this.btn_alterar.UseVisualStyleBackColor = true;
+            this.btn_alterar.Click += new System.EventHandler(this.btn_alterar_Click);
             // 
             // btn_list_bloqueado
             // 
@@ -89,6 +92,7 @@
             this.btn_list_bloqueado.TabIndex = 2;
             this.btn_list_bloqueado.Text = "Lista de Bloqueados";
             this.btn_list_bloqueado.UseVisualStyleBackColor = true;
+            this.btn_list_bloqueado.Click += new System.EventHandler(this.btn_list_bloqueado_Click);
             // 
             // btn_list_perfil
             // 
@@ -98,6 +102,7 @@
             this.btn_list_perfil.TabIndex = 3;
             this.btn_list_perfil.Text = "Lista por Perfil";
             this.btn_list_perfil.UseVisualStyleBackColor = true;
+            this.btn_list_perfil.Click += new System.EventHandler(this.btn_list_perfil_Click);
             // 
             // txt_rg
             // 
@@ -230,7 +235,13 @@
             // 
             // cmb_perfil
             // 
+            this.cmb_perfil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_perfil.FormattingEnabled = true;
+            this.cmb_perfil.Items.AddRange(new object[] {
+            "Administrador",
+            "Gerente",
+            "Operador",
+            "Estagiario"});
             this.cmb_perfil.Location = new System.Drawing.Point(6, 89);
             this.cmb_perfil.Name = "cmb_perfil";
             this.cmb_perfil.Size = new System.Drawing.Size(142, 21);
@@ -330,6 +341,8 @@
             // 
             // gb_registro
             // 
+            this.gb_registro.Controls.Add(this.rb_sinicial);
+            this.gb_registro.Controls.Add(this.btn_cancel);
             this.gb_registro.Controls.Add(this.txt_ID);
             this.gb_registro.Controls.Add(this.label6);
             this.gb_registro.Controls.Add(this.cb_reset_pass);
@@ -353,6 +366,27 @@
             this.gb_registro.TabIndex = 40;
             this.gb_registro.TabStop = false;
             this.gb_registro.Text = "Registro";
+            // 
+            // btn_cancel
+            // 
+            this.btn_cancel.Location = new System.Drawing.Point(104, 267);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Size = new System.Drawing.Size(75, 23);
+            this.btn_cancel.TabIndex = 39;
+            this.btn_cancel.Text = "Cancelar";
+            this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
+            // 
+            // rb_sinicial
+            // 
+            this.rb_sinicial.AutoSize = true;
+            this.rb_sinicial.Location = new System.Drawing.Point(251, 217);
+            this.rb_sinicial.Name = "rb_sinicial";
+            this.rb_sinicial.Size = new System.Drawing.Size(86, 17);
+            this.rb_sinicial.TabIndex = 40;
+            this.rb_sinicial.TabStop = true;
+            this.rb_sinicial.Text = "Senha Inicial";
+            this.rb_sinicial.UseVisualStyleBackColor = true;
             // 
             // frm_adm
             // 
@@ -410,5 +444,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox gb_registro;
         public System.Windows.Forms.ComboBox cmb_inc_perfil;
+        private System.Windows.Forms.Button btn_cancel;
+        private System.Windows.Forms.RadioButton rb_sinicial;
     }
 }

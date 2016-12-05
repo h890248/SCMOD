@@ -39,7 +39,6 @@
             this.txt_pass = new System.Windows.Forms.TextBox();
             this.btn_login = new System.Windows.Forms.Button();
             this.pic_logo = new System.Windows.Forms.PictureBox();
-            this.ll_avaliar_senha = new System.Windows.Forms.LinkLabel();
             this.gb_login = new System.Windows.Forms.GroupBox();
             this.btn_perfil = new System.Windows.Forms.Button();
             this.btn_adm = new System.Windows.Forms.Button();
@@ -165,20 +164,8 @@
             this.pic_logo.TabIndex = 4;
             this.pic_logo.TabStop = false;
             // 
-            // ll_avaliar_senha
-            // 
-            this.ll_avaliar_senha.AutoSize = true;
-            this.ll_avaliar_senha.Location = new System.Drawing.Point(91, 89);
-            this.ll_avaliar_senha.Name = "ll_avaliar_senha";
-            this.ll_avaliar_senha.Size = new System.Drawing.Size(82, 15);
-            this.ll_avaliar_senha.TabIndex = 5;
-            this.ll_avaliar_senha.TabStop = true;
-            this.ll_avaliar_senha.Text = "Avaliar Senha";
-            this.ll_avaliar_senha.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ll_avaliar_senha_LinkClicked);
-            // 
             // gb_login
             // 
-            this.gb_login.Controls.Add(this.ll_avaliar_senha);
             this.gb_login.Controls.Add(this.txt_user);
             this.gb_login.Controls.Add(this.label1);
             this.gb_login.Controls.Add(this.btn_login);
@@ -254,7 +241,6 @@
         private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.PictureBox pic_logo;
         private System.Windows.Forms.ToolStripMenuItem MNcalc_data;
-        private System.Windows.Forms.LinkLabel ll_avaliar_senha;
         private System.Windows.Forms.GroupBox gb_login;
         private System.Windows.Forms.Button btn_perfil;
         private System.Windows.Forms.Button btn_adm;

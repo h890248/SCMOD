@@ -86,8 +86,17 @@ namespace ProjetoIntegrado
                 if (VA.pesquisa_BD(txt_user.Text.ToString(), txt_pass.Text.ToString(),out troca_senha,out reg_user))
                 {
                     if (troca_senha)
+                    {
                         MessageBox.Show("Acesso Liberado : Você deve atualizar sua senha o mais breve possivel . \n \nPor mediadas de segurança não é aconselhavel usar a mesma senha por mais de 90 dias", "Acesso Liberado", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                    MessageBox.Show("Conteudo: " + reg_user.toString());
+                        frm_alterarsenha frm_alterarsenha = new frm_alterarsenha(reg_user);
+                        frm_alterarsenha.Show();
+                    }
+                    if (reg_user.STATUS== "SENHA INICIAL")
+                    {
+                        MessageBox.Show("Senha Inicial . \n \nVoce deve trocar a senha AGORA", "Acesso Liberado", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                        frm_alterarsenha frm_alterarsenha = new frm_alterarsenha(reg_user);
+                        frm_alterarsenha.Show();
+                    }
                     if (reg_user.STATUS == "bloqueado    ")
                     {
                         MessageBox.Show("Acesso Valido porem seu perfil encontrase Bloqueado", "Acesso Valido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -129,7 +138,7 @@ namespace ProjetoIntegrado
                     resultado = valida_senha.restritivo(senha);
                     if ((resultado == true))
                     {
-                        l_grau = valida_senha.qualitativo(txt_pass.Text, txt_user.Text, TEMP_COD_USR);
+                        l_grau = 1;
                         try
                         {
                             resultado_dialogo = MessageBox.Show("Senha dentro dos padroes e Aceita com o grau de segurança : " + valida_senha.define_grau(l_grau) + " . \n Deseja Tentar criar uma senha mais forte?", "Senha Aceita", MessageBoxButtons.YesNo,MessageBoxIcon.Question);

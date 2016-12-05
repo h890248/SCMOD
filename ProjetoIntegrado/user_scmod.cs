@@ -17,7 +17,7 @@ namespace ProjetoIntegrado
         public string PERFIL;
         public String toString()
         {
-            return "ID:" + this.ID + "SENHA" + this.SENHA + "DATA"  + "NOME" + this.NOME + "RG" + this.RG + "STATUS" + this.STATUS + "PERFIL" + this.PERFIL;
+            return "ID: "  + this.ID + "DATA: "  + "NOME: " + this.NOME + "RG: " + this.RG + "STATUS: " + this.STATUS + "PERFIL: " + this.PERFIL;
         }
     }
 }

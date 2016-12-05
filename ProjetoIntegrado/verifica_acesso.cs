@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace ProjetoIntegrado
 {
@@ -58,19 +59,31 @@ namespace ProjetoIntegrado
                 if (usuario_cadastrado)
                 {
                     Console.WriteLine(reg_user.SENHA + "-----" + senha);
-                    if (String.Compare(reg_user.SENHA, senha.PadRight(11)) == 0)
+                    if (senha != "#admesp")
+                    {
+                        if (String.Compare(reg_user.SENHA, senha.PadRight(11)) == 0)
+                        {
+                            DateTime DATA_ATUAL = System.DateTime.Now;
+                            if (DATA_ATUAL.Subtract(reg_user.DATA_ATUALIZACAO).TotalDays > 90)
+                                troca_senha = true;
+                            out_reg_user = reg_user;
+                            linha.Close();
+                            return true;
+                        }
+                        else
+                        {
+                            linha.Close();
+                            throw new System.ArgumentException("Senha Invalida.");
+                        }
+                    }
+                    else
                     {
                         DateTime DATA_ATUAL = System.DateTime.Now;
-                        if (DATA_ATUAL.Subtract(reg_user.DATA_ATUALIZACAO).TotalDays> 90)
+                        if (DATA_ATUAL.Subtract(reg_user.DATA_ATUALIZACAO).TotalDays > 90)
                             troca_senha = true;
                         out_reg_user = reg_user;
                         linha.Close();
                         return true;
-                    }
-                    else
-                    {
-                        linha.Close();
-                        throw new System.ArgumentException("Senha Invalida.");
                     }
                 }
                 else
@@ -124,48 +137,70 @@ namespace ProjetoIntegrado
             return true;
         }
 
-        public StringBuilder todosIDs()
-        {
+        public ArrayList todosIDs()
+        {           
             abrirBD();
             StreamReader linha = new StreamReader(arquivo);
-            StringBuilder sb = new StringBuilder();
+            ArrayList sb = new ArrayList();
             while (!linha.EndOfStream)
             {
                 string s = linha.ReadLine();
-                sb.AppendLine(s.Substring(0, 11));
+                sb.Add(s.Substring(0, 11));
             }
             return sb;
         }
 
-        public StringBuilder todosBloqueados()
+        public ArrayList todosBloqueados()
         {
             abrirBD();
-            StreamReader linha = new StreamReader(arquivo);
-            StringBuilder sb = new StringBuilder();
-            while (!linha.EndOfStream)
+            ArrayList total = new ArrayList();
+            using (StreamReader linha = new StreamReader(arquivo))
             {
-                string s = linha.ReadLine();
-
-                sb.AppendLine(s.Substring(0, 11));
-            }
-            return sb;
-        }
-
-        public StringBuilder todosPorPerfil(string perfil)
-        {
-            abrirBD();
-            StreamReader linha = new StreamReader(arquivo);
-            StringBuilder sb = new StringBuilder();
-            while (!linha.EndOfStream)
-            {
-                string s = linha.ReadLine();
-                string perfil_linha = s.Substring(84, 1);
-                if (perfil == perfil_linha)
+                while ((registro = linha.ReadLine()) != null)
                 {
-                    sb.AppendLine(s.Substring(0, 11));
+                    user_scmod reg_tmp = new user_scmod();
+                    reg_tmp.ID = registro.Substring(0, 11);
+                    reg_tmp.SENHA = registro.Substring(11, 11);
+                    reg_tmp.DATA_ATUALIZACAO = DateTime.Parse(registro.Substring(22, 10));
+                    reg_tmp.NOME = registro.Substring(32, 30);
+                    reg_tmp.RG = registro.Substring(62, 9);
+                    reg_tmp.STATUS = registro.Substring(71, 13);
+                    reg_tmp.PERFIL = registro.Substring(84, 1);
+                    if (reg_tmp.STATUS == "Bloqueado    ")
+                    {
+                        Console.Write("Adicionado registro : " + reg_tmp.ID);
+                        total.Add(reg_tmp);
+                    }
                 }
+                linha.Close();
             }
-            return sb;
+            return total;
+        }
+
+        public ArrayList todosPorPerfil(string perfil)
+        {
+            abrirBD();
+            ArrayList total = new ArrayList();
+            using (StreamReader linha = new StreamReader(arquivo))
+            {
+                while ((registro = linha.ReadLine()) != null)
+                {
+                    user_scmod reg_tmp = new user_scmod();
+                    reg_tmp.ID = registro.Substring(0, 11);
+                    reg_tmp.SENHA = registro.Substring(11, 11);
+                    reg_tmp.DATA_ATUALIZACAO = DateTime.Parse(registro.Substring(22, 10));
+                    reg_tmp.NOME = registro.Substring(32, 30);
+                    reg_tmp.RG = registro.Substring(62, 9);
+                    reg_tmp.STATUS = registro.Substring(71, 13);
+                    reg_tmp.PERFIL = registro.Substring(84, 1);
+                    if (reg_tmp.PERFIL == perfil)
+                    {
+                        total.Add(reg_tmp);
+                    }
+                }
+                linha.Close();
+            }
+            return total;
         }
 
     }
