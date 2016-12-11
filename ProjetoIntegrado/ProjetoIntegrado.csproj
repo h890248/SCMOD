@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="calculadora_data.cs" />
+    <Compile Include="criptografia.cs" />
     <Compile Include="frm_adm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +87,12 @@
     </Compile>
     <Compile Include="frm_alterarsenha.Designer.cs">
       <DependentUpon>frm_alterarsenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_crip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_crip.Designer.cs">
+      <DependentUpon>frm_crip.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_index.cs">
       <SubType>Form</SubType>
@@ -133,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_alterarsenha.resx">
       <DependentUpon>frm_alterarsenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_crip.resx">
+      <DependentUpon>frm_crip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_index.resx">
       <DependentUpon>frm_index.cs</DependentUpon>

@@ -42,6 +42,7 @@
             this.gb_login = new System.Windows.Forms.GroupBox();
             this.btn_perfil = new System.Windows.Forms.Button();
             this.btn_adm = new System.Windows.Forms.Button();
+            this.tsmi_criptografiaDeTexto = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_s_index.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_logo)).BeginInit();
             this.gb_login.SuspendLayout();
@@ -52,13 +53,14 @@
             this.menu_s_index.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.menu_s_index.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MNescala,
+            this.tsmi_criptografiaDeTexto,
             this.MNcalc_data,
             this.MNsobre,
             this.MNsair});
             this.menu_s_index.Location = new System.Drawing.Point(0, 0);
             this.menu_s_index.Name = "menu_s_index";
             this.menu_s_index.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menu_s_index.Size = new System.Drawing.Size(521, 24);
+            this.menu_s_index.Size = new System.Drawing.Size(655, 24);
             this.menu_s_index.TabIndex = 0;
             this.menu_s_index.Text = "menuStrip1";
             this.menu_s_index.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -157,7 +159,7 @@
             // pic_logo
             // 
             this.pic_logo.Image = global::ProjetoIntegrado.Properties.Resources.logo1;
-            this.pic_logo.Location = new System.Drawing.Point(187, 62);
+            this.pic_logo.Location = new System.Drawing.Point(277, 61);
             this.pic_logo.Name = "pic_logo";
             this.pic_logo.Size = new System.Drawing.Size(134, 105);
             this.pic_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -171,7 +173,7 @@
             this.gb_login.Controls.Add(this.btn_login);
             this.gb_login.Controls.Add(this.label2);
             this.gb_login.Controls.Add(this.txt_pass);
-            this.gb_login.Location = new System.Drawing.Point(77, 196);
+            this.gb_login.Location = new System.Drawing.Point(167, 195);
             this.gb_login.Name = "gb_login";
             this.gb_login.Size = new System.Drawing.Size(334, 168);
             this.gb_login.TabIndex = 6;
@@ -179,7 +181,7 @@
             // 
             // btn_perfil
             // 
-            this.btn_perfil.Location = new System.Drawing.Point(174, 258);
+            this.btn_perfil.Location = new System.Drawing.Point(264, 257);
             this.btn_perfil.Name = "btn_perfil";
             this.btn_perfil.Size = new System.Drawing.Size(167, 23);
             this.btn_perfil.TabIndex = 10;
@@ -189,7 +191,7 @@
             // 
             // btn_adm
             // 
-            this.btn_adm.Location = new System.Drawing.Point(174, 229);
+            this.btn_adm.Location = new System.Drawing.Point(264, 228);
             this.btn_adm.Name = "btn_adm";
             this.btn_adm.Size = new System.Drawing.Size(167, 23);
             this.btn_adm.TabIndex = 11;
@@ -197,13 +199,22 @@
             this.btn_adm.UseVisualStyleBackColor = true;
             this.btn_adm.Click += new System.EventHandler(this.btn_adm_Click);
             // 
+            // tsmi_criptografiaDeTexto
+            // 
+            this.tsmi_criptografiaDeTexto.BackColor = System.Drawing.SystemColors.Control;
+            this.tsmi_criptografiaDeTexto.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold);
+            this.tsmi_criptografiaDeTexto.Name = "tsmi_criptografiaDeTexto";
+            this.tsmi_criptografiaDeTexto.Size = new System.Drawing.Size(173, 20);
+            this.tsmi_criptografiaDeTexto.Text = "Criptografia de Texto";
+            this.tsmi_criptografiaDeTexto.Click += new System.EventHandler(this.tsmi_criptografiaDeTexto_Click);
+            // 
             // frm_inicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(521, 408);
+            this.ClientSize = new System.Drawing.Size(655, 408);
             this.Controls.Add(this.btn_adm);
             this.Controls.Add(this.btn_perfil);
             this.Controls.Add(this.pic_logo);
@@ -244,6 +255,7 @@
         private System.Windows.Forms.GroupBox gb_login;
         private System.Windows.Forms.Button btn_perfil;
         private System.Windows.Forms.Button btn_adm;
+        private System.Windows.Forms.ToolStripMenuItem tsmi_criptografiaDeTexto;
     }
 }
 

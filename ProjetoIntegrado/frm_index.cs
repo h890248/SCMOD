@@ -15,6 +15,7 @@ namespace ProjetoIntegrado
         Form Form2 = new ProjetoIntegrado.frm_temperatura();
         Form frm_sobre = new ProjetoIntegrado.frm_about();
         Form frm_calculadata = new ProjetoIntegrado.frm_calculadata();
+        Form frm_crip = new ProjetoIntegrado.frm_crip();
         double TEMP_COD_USR;
         string perfil_tipo;
         public user_scmod reg_user = new user_scmod();
@@ -206,6 +207,11 @@ namespace ProjetoIntegrado
         {
             Form frm_adm = new ProjetoIntegrado.frm_adm();
             frm_adm.ShowDialog();
+        }
+
+        private void tsmi_criptografiaDeTexto_Click(object sender, EventArgs e)
+        {
+            frm_crip.ShowDialog();
         }
     }
 }
